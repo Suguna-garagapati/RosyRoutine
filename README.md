@@ -1,7 +1,7 @@
 # 🌸 RosyRoutine
 
 <p align="center">
-  <img src="assets/pinklogo.png" width="140"/>
+  <img src="assets/pink2.png" width="140"/>
 </p>
 
 <p align="center">
