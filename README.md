@@ -1,17 +1,39 @@
-# rosyroutine
+# 🌸 RosyRoutine
 
-A new Flutter project.
+RosyRoutine is a cute and aesthetic Flutter productivity app designed to help users track daily routines, build streaks, and stay motivated every day.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+* ✅ Daily task management
+* 🔥 Streak counter system
+* 🎉 Confetti celebration animation
+* 💖 Cute pink aesthetic UI
+* 📱 Local data saving using SharedPreferences
+* ➕ Add custom tasks
+* 🗑️ Delete tasks easily
+* 📊 Progress tracker
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Technologies Used
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+* Flutter
+* Dart
+* Shared Preferences
+* Flutter Animate
+* Confetti Package
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📥 APK Download
+
+Download the latest APK from the Releases section.
+
+## 🌸 Future Improvements
+
+* Push notifications
+* Dark mode
+* Firebase sync
+* User authentication
+* Calendar tracking
+
+## 👩‍💻 Developer
+
+Made with 💖 by Suguna
+
