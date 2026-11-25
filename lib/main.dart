@@ -229,27 +229,57 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                   },
                 ),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: tasks.length,
 
-                    itemBuilder: (context, index) {
-                      return taskCard(index)
-                          .animate()
-                          .fade(duration: 800.ms)
-                          .slideY(
-                            begin: 1,
-                            end: 0,
-                            duration: 800.ms,
-                            curve: Curves.easeOutBack,
-                          )
-                          .scale(
-                            begin: const Offset(0.8, 0.8),
-                            end: const Offset(1, 1),
-                            duration: 800.ms,
-                          );
-                    },
-                  ),
+                Expanded(
+                  child: tasks.isEmpty
+                      ? Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(
+                                Icons.spa_outlined,
+                                size: 65,
+                                color: Color(0xFFF8BBD0),
+                              ),
+                              const SizedBox(height: 15),
+                              const Text(
+                                "No tasks yet! 🌸",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black87,
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              const Text(
+                                "Add your first goal and start fresh!",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.black54,
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      : ListView.builder(
+                          itemCount: tasks.length,
+                          itemBuilder: (context, index) {
+                            return taskCard(index)
+                                .animate()
+                                .fade(duration: 800.ms)
+                                .slideY(
+                                  begin: 1,
+                                  end: 0,
+                                  duration: 800.ms,
+                                  curve: Curves.easeOutBack,
+                                )
+                                .scale(
+                                  begin: const Offset(0.8, 0.8),
+                                  end: const Offset(1, 1),
+                                  duration: 800.ms,
+                                );
+                          },
+                        ),
                 ),
               ],
             ),
@@ -354,8 +384,8 @@ class _HomeScreenState extends State<HomeScreen> {
         boxShadow: [
           BoxShadow(
             color: tasks[index]["done"]
-                ? Colors.pink.withOpacity(0.18)
-                : Colors.pink.withOpacity(0.08),
+                ? Colors.pink.withValues(alpha: 0.05)
+                : Colors.pink.withValues(alpha: 0.08),
             blurRadius: 10,
             offset: const Offset(0, 5),
           ),
